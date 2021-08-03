@@ -12,14 +12,14 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/loop.bat -OutFile loop.bat
     - name: Download Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYTG/rdp/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/GamerGamesYT/rdp/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Account Ngrok.
@@ -41,3 +41,4 @@ jobs:
       run: cmd /c start.bat
     - name: Successfully Created! You Can Close Tabs Now.
       run: cmd /c loop.bat
+
